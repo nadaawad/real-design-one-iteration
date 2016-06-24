@@ -1,8 +1,8 @@
-timestamp=1466762557191
+timestamp=1466792071323
 
 [$root]
-A/$root=22|""|0|1*3617780
-BinI32/$root=3*3200761
+A/$root=22|""|0|1*3625376
+BinI32/$root=3*3205415
 Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284a4dcc894f492dce4ccf8b37328e3753d0f53702005ea8075e
 
 [AP_total]
@@ -209,9 +209,9 @@ R=./src/col_nos.v|1
 Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284a4dcc894f492dce4ccf8b37328e3753d0f53702005ea8075e
 
 [control_unit]
-A/control_unit=22|./src/control_unit.v|2|1*3618250
-BinI32/control_unit=3*3200900
-P/~emb=1958,2553,3892,4432
+A/control_unit=22|./src/control_unit.v|2|1*3625846
+BinI32/control_unit=3*3205554
+P/~emb=1958,2554,3896,4436
 R=./src/control_unit.v|2
 Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284a4dcc894f492dce4ccf8b37328e3753d0f53702005ea8075e
 
@@ -456,7 +456,7 @@ Version=9.1.2353.4205  (Windows)|00000017789cd3cd51284a4dcc894f492dce4ccf8b37328
 [~A]
 E:/4th computer/graduation projects new design/real-design-23-6/real_design_23_6/real_design_23_6/src/2x1_mux.v_8_dot_product _with_control.v_8_dot_product _with_control_row.v_8_dot_product.v_8_organizer.v_8_organizer_with_control.v_8_organizer_with_control_row.v_8x8_adder.v_a_s.v_adder_subtractor.v_adder_subtractor_with_control.v_alu.v_ap_total_mem.v_col_nos.v_control_unit.v_decoder.v_decoder_with_control.v_delay.v_div_nr_wsticky.v_division.v_fp_div.v_fpaddsub_8_23_uid2.v_fpaddsub_8_23_uid2_rightshifter.v_fpmultiplier_8_23_8_23_8_23_uid2.v_inputieee_8_23_to_8_23.v_intadder_27_f180_uid7.v_intadder_33_f300_uid23.v_intadder_34_f180_uid18.v_intadder_42_f300_uid15.v_intmultiplier_usingdsp_24_24_48_unsigned_uid4.v_lzcshifter_28_to_28_counting_32_uid15.v_main_alu.v_matrix_by_vector_v3.v_matrix_by_vector_v3_with_control.v_mema.v_memory_tb.v_memp.v_memp_v2.v_memr.v_memx.v_multiples_matrix.v_multiply.v_n_to_2n_demux.v_outputieee_8_23_to_8_23.v_P_Emap_8.v_P_Emap_16.v_parameters_mem.v_rkold_prev.v_row_by_vector_module.v=0*379486*418968
 LastVerilogToplevel=vectorXvector_mXv
-ModifyID=7712
+ModifyID=7734
 Version=73
 e:/4th computer/graduation projects new design/real-design-23-6/real_design_23_6/real_design_23_6/src/2x1_mux.v_8_dot_product _with_control.v_8_dot_product _with_control_row.v_8_dot_product.v_8_organizer.v_8_organizer_with_control.v_8_organizer_with_control_row.v_8x8_adder.v_a_s.v_adder_subtractor.v_adder_subtractor_with_control.v_alu.v_ap_total_mem.v_col_nos.v_control_unit.v_decoder.v_decoder_with_control.v_delay.v_div_nr_wsticky.v_division.v_fp_div.v_fpaddsub_8_23_uid2.v_fpaddsub_8_23_uid2_rightshifter.v_fpmultiplier_8_23_8_23_8_23_uid2.v_inputieee_8_23_to_8_23.v_intadder_27_f180_uid7.v_intadder_33_f300_uid23.v_intadder_34_f180_uid18.v_intadder_42_f300_uid15.v_intmultiplier_usingdsp_24_24_48_unsigned_uid4.v_lzcshifter_28_to_28_counting_32_uid15.v_main_alu.v_matrix_by_vector_v3.v_matrix_by_vector_v3_with_control.v_mema.v_memory_tb.v_memp.v_memp_v2.v_memr.v_memx.v_multiples_matrix.v_multiply.v_n_to_2n_demux.v_outputieee_8_23_to_8_23.v_P_Emap_8.v_P_Emap_16.v_parameters_mem.v_rkold_prev.v_row_by_vector_module.v=0*801756*841686
 e:/4th computer/graduation projects new design/real-design-23-6/real_design_23_6/real_design_23_6/src/2x1_mux.v_8_dot_product _with_control.v_8_dot_product _with_control_row.v_8_dot_product.v_8_organizer.v_8_organizer_with_control.v_8x8_adder_with_start.v_8_organizer_with_control_row.v_8x8_adder.v_a_s.v_adder_subtractor.v_adder_subtractor_with_control.v_alu.v_ap_total_mem.v_col_nos.v_control_unit.v_decoder.v_decoder_with_control.v_delay.v_div_nr_wsticky.v_division.v_fp_div.v_fpaddsub_8_23_uid2.v_fpaddsub_8_23_uid2_rightshifter.v_fpmultiplier_8_23_8_23_8_23_uid2.v_inputieee_8_23_to_8_23.v_intadder_27_f180_uid7.v_intadder_33_f300_uid23.v_intadder_34_f180_uid18.v_intadder_42_f300_uid15.v_intmultiplier_usingdsp_24_24_48_unsigned_uid4.v_lzcshifter_28_to_28_counting_32_uid15.v_main_alu.v_matrix_by_vector_v3.v_matrix_by_vector_v3_with_control.v_mema.v_memory_tb.v_memp.v_memp_v2.v_memr.v_memx.v_multiples_matrix.v_multiply.v_n_to_2n_demux.v_outputieee_8_23_to_8_23.v_P_Emap_8.v_P_Emap_16.v_parameters_mem.v_rkold_prev.v=0*1016425*1056899
@@ -465,7 +465,7 @@ e:/4th computer/graduation projects new design/real-design-23-6/real_design_23_6
 e:/4th computer/graduation projects new design/real-design-23-6/real_design_23_6/real_design_23_6/src/8_dot_product _with_control.v=0*2247042*2248830
 e:/4th computer/graduation projects new design/real-design-23-6/real_design_23_6/real_design_23_6/src/8_dot_product _with_control.v_vectorxvector_with_control.v=0*2184431*2186776
 e:/4th computer/graduation projects new design/real-design-23-6/real_design_23_6/real_design_23_6/src/alu.v_top_module.v=0*2277264*2281297
-e:/4th computer/graduation projects new design/real-design-23-6/real_design_23_6/real_design_23_6/src/control_unit.v=0*2310114*2312431
+e:/4th computer/graduation projects new design/real-design-23-6/real_design_23_6/real_design_23_6/src/control_unit.v=0*2319554*2321871
 e:/4th computer/graduation projects new design/real-design-23-6/real_design_23_6/real_design_23_6/src/main_alu.v=0*2301537*2303018
 e:/4th computer/graduation projects new design/real-design-23-6/real_design_23_6/real_design_23_6/src/matrix_by_vector_v3_with_control.v=0*2240015*2241904
 e:/4th computer/graduation projects new design/real-design-23-6/real_design_23_6/real_design_23_6/src/top_module.v=0*2293858*2296045
@@ -473,12 +473,12 @@ e:/4th computer/graduation projects new design/real-design-23-6/real_design_23_6
 e:/4th computer/graduation projects new design/real-design-23-6/real_design_23_6/real_design_23_6/src/vxc_mul3_sub.v=0*2210716*2212121
 
 [~MFT]
-0=756|0real_design_23_6.mgf|2312431|236954
-1=1280|1real_design_23_6.mgf|3618250|3270099
-3=1280|3real_design_23_6.mgf|3200900|2892818
+0=762|0real_design_23_6.mgf|2321871|239836
+1=1284|1real_design_23_6.mgf|3625846|3277695
+3=1284|3real_design_23_6.mgf|3205554|2897472
 
 [~U]
-$root=12|0*2303579|
+$root=12|0*2312996|
 AP_total=12|0*2017926||0x80
 Alu=12|0*2266929||0x80
 Eight_Organizer=12|0*1972024||0x80
@@ -508,7 +508,7 @@ adder_subtractor_with_control=12|0*1978575||0x80
 adder_subtractor_with_control_with_start=12|0*1987188||0x80
 adder_subtractor_with_start=12|0*1985018||0x80
 col_nos=12|0*2030064||0x80
-control_unit=12|0*2304385||0x80
+control_unit=12|0*2313818||0x80
 decoder=12|0*2036921||0x80
 decoder_with_control=12|0*2037975||0x80
 delay=12|0*2039571||0x80

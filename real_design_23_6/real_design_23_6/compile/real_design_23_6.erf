@@ -21,5 +21,5 @@ UPDATEPROGRESS 90
 UPDATEPROGRESS 100
 MESSAGE "$root top modules: matrix_by_vector_v3 memory_tb memP P_Emap_16 tb tb_row_by_vector vectorXvector vectorXvector_mXv."
 ENDPROGRESS Compiling...
-SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 1[s]."
 MESSAGE "done"

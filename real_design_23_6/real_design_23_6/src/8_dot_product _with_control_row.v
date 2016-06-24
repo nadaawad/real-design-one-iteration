@@ -14,7 +14,7 @@ integer ii=0;
 integer iii=0; 
 integer iiii=0;
 integer iiiii=0;
-output reg finish ;	 
+output reg finish=0 ;	 
 output reg prepare_my_new_input=0; 
 
 output reg fake_prepare0=0;
