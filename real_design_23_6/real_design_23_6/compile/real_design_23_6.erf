@@ -1,0 +1,25 @@
+MESSAGE "Pass 1. Scanning modules hierarchy."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+BEGINPROGRESS Compiling...
+UPDATEPROGRESS 35
+MESSAGE "Pass 2. Processing instantiations."
+UPDATEPROGRESS 45
+MESSAGE "Pass 3. Processing behavioral statements."
+UPDATEPROGRESS 80
+MESSAGE "Running Optimizer."
+MESSAGE "ELB/DAG code generating."
+MESSAGE_SP VCP2113 "Module \$root found in current working library."
+MESSAGE_SP VCP2113 "Module matrix_by_vector_v3 found in current working library."
+MESSAGE_SP VCP2113 "Module memory_tb found in current working library."
+MESSAGE_SP VCP2113 "Module memP found in current working library."
+MESSAGE_SP VCP2113 "Module P_Emap_16 found in current working library."
+MESSAGE_SP VCP2113 "Module tb found in current working library."
+MESSAGE_SP VCP2113 "Module tb_row_by_vector found in current working library."
+MESSAGE_SP VCP2113 "Module vectorXvector found in current working library."
+MESSAGE_SP VCP2113 "Module vectorXvector_mXv found in current working library."
+UPDATEPROGRESS 90
+UPDATEPROGRESS 100
+MESSAGE "$root top modules: matrix_by_vector_v3 memory_tb memP P_Emap_16 tb tb_row_by_vector vectorXvector vectorXvector_mXv."
+ENDPROGRESS Compiling...
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time: 0[s]."
+MESSAGE "done"

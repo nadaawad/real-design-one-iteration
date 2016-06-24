@@ -1,0 +1,12 @@
+[Version]
+Version=9.1
+[Designs]
+real_design_23_6=.\real_design_23_6\real_design_23_6.adf
+[Browser]
+sort=order
+mode=none
+[Order]
+order=1
+macro=
+[Expand]
+real_design_23_6=1
