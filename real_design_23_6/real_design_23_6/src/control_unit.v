@@ -385,7 +385,7 @@ module control_unit (total,clk,reset,finish_alu,memories_pre_preprocess,memoryP_
 								begin
 									iteration_counter<=iteration_counter+1;
 									$display("finish finish finish finish finish finish finish finish");
-									if(iteration_counter ==2)
+									if(iteration_counter ==0)
 										halt<=1;
 								end
 							end
