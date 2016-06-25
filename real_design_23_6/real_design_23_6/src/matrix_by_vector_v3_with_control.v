@@ -79,7 +79,7 @@ generate
 for(j=0;j<no_of_row_by_vector_modules;j=j+1) begin:instantiate_ROW_BY_VECTOR
 	
 row_by_vector_with_control #(.NI(NI),.element_width(element_width)) R(clk,A_rows[(no_of_row_by_vector_modules-j)*NI*element_width-1-:element_width*NI],
-vector_rows[(no_of_row_by_vector_modules-j)*NI*element_width-1-:element_width*NI],result[(no_of_row_by_vector_modules-j)*element_width-1-:element_width],give_us_all[(no_of_row_by_vector_modules-j-1)],no_of_multiples[(no_of_row_by_vector_modules-j)*32-1-:32],start_row_by_vector[no_of_row_by_vector_modules-j-1],decoder_read_now[no_of_row_by_vector_modules-j-1],reset,you_can_read[no_of_row_by_vector_modules-j-1],I_am_ready[no_of_row_by_vector_modules-j-1]);
+vector_rows[(no_of_row_by_vector_modules-j)*NI*element_width-1-:element_width*NI],result[(no_of_row_by_vector_modules-j)*element_width-1-:element_width],give_us_all[(no_of_row_by_vector_modules-j-1)],no_of_multiples[(no_of_row_by_vector_modules-j)*32-1-:32],start_row_by_vector[no_of_row_by_vector_modules-j-1],decoder_read_now[no_of_row_by_vector_modules-j-1],!start,you_can_read[no_of_row_by_vector_modules-j-1],I_am_ready[no_of_row_by_vector_modules-j-1]);
 	
 end
 endgenerate
@@ -118,7 +118,7 @@ always@(posedge clk)
 
 
 always@(posedge clk) begin
-	if(reset)
+	if(reset||!start)
 	begin	
 		i<=0;
 		first_pipeline <=1;
@@ -128,13 +128,13 @@ always@(posedge clk) begin
 		memories_pre_preprocess<=0;
 	end
 	
-	else if(!start) 		 
-		 begin		 
-			 i<=0;
-			 first_pipeline <=1;  
-			 first_initialization_counter<=0;
-			 memories_pre_preprocess<=0;
-		 end 
+	//else if(!start) 		 
+//		 begin		 
+//			 i<=0;
+//			 first_pipeline <=1;  
+//			 first_initialization_counter<=0;
+//			 memories_pre_preprocess<=0;
+//		 end 
 	else if(start && first_pipeline && ~first_initialization_counter)
 		begin 
 			

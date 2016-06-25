@@ -1,5 +1,5 @@
 
-module eight_Dot_Product_Multiply_with_control_row(clk,reset ,first_row_input,second_row_input, dot_product_output,finish,outsider_read_now,no_of_multiples,prepare_my_new_input,fake_prepare0,I_am_ready);
+module eight_Dot_Product_Multiply_with_control_row(clk,main_reset,reset ,first_row_input,second_row_input, dot_product_output,finish,outsider_read_now,no_of_multiples,prepare_my_new_input,fake_prepare0,I_am_ready);
 
 parameter NOE = 10;
 parameter NI = 8;
@@ -23,6 +23,7 @@ reg fake_prepare2=0;
 
 reg fake_reset;
 
+input wire main_reset;
 input wire [31:0] no_of_multiples;
 reg [31:0] delayed_no_of_multiples=10000;
 input wire outsider_read_now;
@@ -150,8 +151,10 @@ always@(posedge clk)
 	end	
 	
 always @(posedge clk)
-	begin 
-		if(outsider_read_now && initialization_counter)	
+	begin 	
+		if(main_reset)
+			 initialization_counter<=1;
+		else if(outsider_read_now && initialization_counter)	
 			begin 
 			delayed_no_of_multiples <= no_of_multiples;
 			initialization_counter<=0;
@@ -187,8 +190,10 @@ end
 
 always @(posedge clk)
 	begin
-
-				if(iii <delayed_no_of_multiples -1)
+		if(main_reset)
+			finish<=0;
+			
+		else if(iii <delayed_no_of_multiples -1)
 					begin 
 						if(final_adder_finish_dash) 
 							begin
@@ -196,7 +201,9 @@ always @(posedge clk)
 							end	 
 							
 					end
-				else if(iii == delayed_no_of_multiples -1)
+				
+					
+			else if(iii == delayed_no_of_multiples -1)
 					begin 
 						if(final_adder_finish_dash)
 							begin	

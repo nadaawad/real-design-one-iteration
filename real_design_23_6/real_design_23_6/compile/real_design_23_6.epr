@@ -1,1 +1,2 @@
-"./src/control_unit.v"	1
+"./src/top_module.v"	1
+"./src/alu.v"	1

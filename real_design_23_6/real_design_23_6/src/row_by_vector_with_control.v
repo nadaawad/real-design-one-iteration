@@ -52,7 +52,7 @@ output wire I_am_ready;
 //adder_subtractor adder2 (m3_result,32'b0,adder_2nd_result,1'b0,clk,1'b1);
 //adder_subtractor adder3 (adder_1st_result,adder_2nd_result,result,1'b0,clk,1'b1);	
 
-eight_Dot_Product_Multiply_with_control_row  edomwcr(clk,start_row_by_vector ,a,p, result,dot_product_finish,you_can_read,no_of_multiples,prepare_my_new_input,fake_prepare0,I_am_ready);
+eight_Dot_Product_Multiply_with_control_row  edomwcr(clk,reset,start_row_by_vector ,a,p, result,dot_product_finish,you_can_read,no_of_multiples,prepare_my_new_input,fake_prepare0,I_am_ready);
 
 // note if you don't need to accelerate the special case where #of multiples =1 , you don't need the reset signal
 	// nor the total and no_of_units parameters. 

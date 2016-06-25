@@ -384,6 +384,7 @@ module control_unit (total,clk,reset,finish_alu,memories_pre_preprocess,memoryP_
 							if(counter3==4)	 
 								begin
 									iteration_counter<=iteration_counter+1;
+									$display("finish finish finish finish finish finish finish finish");
 									if(iteration_counter ==2)
 										halt<=1;
 								end

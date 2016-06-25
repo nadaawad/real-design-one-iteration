@@ -326,7 +326,13 @@ module Alu(total,clk,reset,reset_vXv1,reset_mXv1,memA_output,Emap_mem_output_row
 		 $display("%h",mXv1_result);
 			
 		end	
-				
+
+
+//always @(posedge clk)
+//	begin
+//		if(result_mem_we_6)
+//		$display("%h",memoryP_input);
+//	end
 			
 	
 endmodule 
